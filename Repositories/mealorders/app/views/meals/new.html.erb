@@ -1,0 +1,18 @@
+<p>new lunch meal</p>
+
+<%= form_for :article, url: meals_path do |f| %>
+	<p>
+		<%= f.label :number %><br>
+		<%= f.text_field :number %>
+	</p>
+	<p>
+		<%= f.label :type %><br>
+		<%= f.text_field :type %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+
+<% end %>
+
